@@ -1,0 +1,4692 @@
+{
+  "foundation/arkui/ace_engine/frameworks/core/components_ng/pattern/indexer/indexer_pattern.cpp": {
+    "processed": true,
+    "0_used_headers": [
+      {
+        "file_name": "interfaces/inner_api/ui_session/ui_session_manager.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/log/dump_log.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/memory/ace_type.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "bridge/common/utils/utils.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/animation/animator.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/common/container.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/common/font_manager.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/common/vibrator/vibrator_utils.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components/common/properties/color.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components/common/properties/popup_param.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components/common/properties/shadow_config.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/divider/divider_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/linear_layout/linear_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/list/list_item_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/list/list_item_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/list/list_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/list/list_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/stack/stack_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/text/text_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/text/text_model.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/text/text_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/property/calc_length.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/property/measure_utils.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/property/property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_v2/inspector/inspector_constants.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/event/mouse_event.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/pipeline_ng/pipeline_context.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "core/components/theme/shadow_theme.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/linear_layout/linear_layout_pattern.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/list/list_event_hub.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/property/border_property.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/property/measure_property.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/indexer/indexer_theme.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/list/list_properties.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "core/components/common/layout/constants.h",
+        "used_count": 10,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components/indexer/indexer_theme.h",
+        "used_count": 17,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/base/frame_node.h",
+        "used_count": 57,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/pattern/indexer/indexer_pattern.h",
+        "used_count": 125,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "indexer_pattern.h",
+        "used_count": 125,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ]
+  },
+  "foundation/arkui/ace_engine/frameworks/core/components_ng/pattern/navigation/navigation_model_ng.cpp": {
+    "processed": true,
+    "0_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_model_ng.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/i18n/localization.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/memory/ace_type.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/memory/referenced.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/common/ace_application_info.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/common/resource/resource_parse_utils.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components/common/properties/alignment.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/button/button_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/divider/divider_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/divider/divider_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/image/image_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/bar_item_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/nav_bar_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_content_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/title_bar_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/tool_bar_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/text/text_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "frameworks/base/system_bar/system_bar_style.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "frameworks/bridge/common/utils/engine_helper.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/button/button_pattern.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/linear_layout/linear_layout_pattern.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/bar_item_event_hub.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navdestination_content_pattern.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/divider/divider_render_property.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/tool_bar_pattern.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/image/image_layout_property.h",
+        "used_count": 4,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/bar_item_pattern.h",
+        "used_count": 4,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_event_hub.h",
+        "used_count": 8,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_toolbar_util.h",
+        "used_count": 11,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_title_util.h",
+        "used_count": 12,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/nav_bar_pattern.h",
+        "used_count": 17,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/title_bar_pattern.h",
+        "used_count": 28,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/base/view_stack_processor.h",
+        "used_count": 45,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_pattern.h",
+        "used_count": 57,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/common/force_split/force_split_utils.h",
+        "used_count": 58,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_declaration.h",
+        "used_count": 59,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "base/utils/utils.h",
+        "used_count": 113,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/base/frame_node.h",
+        "used_count": 119,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ]
+  },
+  "foundation/arkui/ace_engine/frameworks/core/components_ng/pattern/navigation/navigation_toolbar_util.cpp": {
+    "processed": true,
+    "0_used_headers": [
+      {
+        "file_name": "base/i18n/localization.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/subwindow/subwindow_manager.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/utils/system_properties.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/common/agingadapation/aging_adapation_dialog_theme.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/common/agingadapation/aging_adapation_dialog_util.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/common/container.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/bubble/bubble_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/button/button_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/divider/divider_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/grid/grid_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/image/image_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/menu/menu_view.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/nav_bar_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/title_bar_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/title_bar_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/tool_bar_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/text/text_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/interfaces/native/node/menu_modifier.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/menu/wrapper/menu_wrapper_pattern.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/button/button_pattern.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_title_util.h",
+        "used_count": 3,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navdestination_pattern_base.h",
+        "used_count": 3,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/tool_bar_pattern.h",
+        "used_count": 3,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/base/view_abstract.h",
+        "used_count": 4,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/image/image_layout_property.h",
+        "used_count": 4,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/bar_item_event_hub.h",
+        "used_count": 4,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/bar_item_pattern.h",
+        "used_count": 4,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_toolbar_util.h",
+        "used_count": 18,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/pattern/menu/bridge/inner_modifier/menu_view_inner_modifier.h",
+        "used_count": 97,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/pattern/menu/bridge/inner_modifier/menu_inner_modifier.h",
+        "used_count": 106,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ]
+  },
+  "foundation/arkui/ace_engine/frameworks/core/components_ng/pattern/swiper/swiper_pattern.cpp": {
+    "processed": true,
+    "0_used_headers": [
+      {
+        "file_name": "base/error/error_code.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/geometry/axis.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/geometry/dimension.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/geometry/ng/offset_t.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/ressched/ressched_report.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/animation/curve.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/animation/curves.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/animation/spring_curve.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/common/container_scope.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/common/recorder/node_data_cache.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/manager/load_complete/load_complete_manager.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper/swiper_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tab_content_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/render/adapter/component_snapshot.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/syntax/for_each_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/syntax/lazy_for_each_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/syntax/repeat_virtual_scroll_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/syntax/repeat_virtual_scroll_2_node.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/swiper/swiper_paint_method.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper_indicator/indicator_common/arc_swiper_indicator_pattern.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tab_content_node.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tabs_node.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navrouter/navdestination_pattern.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper/swiper_theme.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper/swiper_ui_session_adapter.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper_indicator/indicator_common/indicator_pattern.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/syntax/arkoala_lazy_node.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "base/log/event_report.h",
+        "used_count": 3,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "base/perfmonitor/perf_monitor.h",
+        "used_count": 4,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/scrollable/scrollable_properties.h",
+        "used_count": 5,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "base/utils/multi_thread.h",
+        "used_count": 7,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper_indicator/indicator_common/swiper_indicator_pattern.h",
+        "used_count": 7,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper_indicator/indicator_common/swiper_arrow_pattern.h",
+        "used_count": 8,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "base/perfmonitor/perf_constants.h",
+        "used_count": 9,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/swiper/swiper_helper.h",
+        "used_count": 10,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "base/log/ace_trace.h",
+        "used_count": 30,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper/swiper_pattern.h",
+        "used_count": 39,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components/common/layout/constants.h",
+        "used_count": 39,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "base/log/log_wrapper.h",
+        "used_count": 40,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "base/utils/utils.h",
+        "used_count": 58,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/manager/content_change_manager/content_change_manager.h",
+        "used_count": 58,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ]
+  },
+  "foundation/arkui/ace_engine/frameworks/core/components_ng/pattern/navigation/navigation_pattern.cpp": {
+    "processed": true,
+    "0_used_headers": [
+      {
+        "file_name": "interfaces/inner_api/ui_session/ui_session_manager.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/log/dump_log.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/log/event_report.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/ressched/ressched_report.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/utils/system_properties.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/common/ime/input_method_manager.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/manager/load_complete/load_complete_manager.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/button/button_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/nav_bar_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/nav_bar_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_content_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_drag_bar_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_model_data.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_title_util.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/tool_bar_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/property/measure_utils.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/log/ace_checker.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "core/components_ng/manager/avoid_info/avoid_info_manager.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/tool_bar_pattern.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/divider/divider_render_property.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/window_scene/helper/window_scene_helper.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/title_bar_pattern.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/stage/page_node.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "base/perfmonitor/perf_constants.h",
+        "used_count": 3,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "base/utils/multi_thread.h",
+        "used_count": 5,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "interfaces/inner_api/ace/ui_content_config.h",
+        "used_count": 6,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "core/components_ng/manager/content_change_manager/content_change_manager.h",
+        "used_count": 88,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/common/force_split/force_split_utils.h",
+        "used_count": 163,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_pattern.h",
+        "used_count": 264,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_declaration.h",
+        "used_count": 293,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ]
+  },
+  "foundation/arkui/ace_engine/frameworks/core/components_ng/pattern/tabs/tabs_pattern.cpp": {
+    "processed": true,
+    "0_used_headers": [
+      {
+        "file_name": "base/geometry/axis.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/geometry/dimension.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/common/recorder/event_recorder.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/common/recorder/node_data_cache.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components/tab_bar/tabs_event.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/manager/load_complete/load_complete_manager.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/divider/divider_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper/swiper_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tab_bar_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tab_bar_paint_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tab_content_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tabs_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tabs_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/property/property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_v2/inspector/inspector_constants.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/pipeline_ng/pipeline_context.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/log/ace_checker.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "core/components/common/layout/constants.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/divider/divider_render_property.h",
+        "used_count": 3,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "base/log/log_wrapper.h",
+        "used_count": 6,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper/swiper_model.h",
+        "used_count": 6,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/base/observer_handler.h",
+        "used_count": 8,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tab_bar_pattern.h",
+        "used_count": 8,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "base/utils/utils.h",
+        "used_count": 46,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tabs_pattern.h",
+        "used_count": 78,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ]
+  },
+  "foundation/arkui/ace_engine/frameworks/core/components_ng/pattern/navigation/navigation_title_util.cpp": {
+    "processed": true,
+    "0_used_headers": [
+      {
+        "file_name": "base/i18n/localization.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/subwindow/subwindow_manager.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/utils/system_properties.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/utils/utf_helper.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/common/agingadapation/aging_adapation_dialog_theme.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/common/container.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/bubble/bubble_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/button/button_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/grid/grid_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/image/image_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/interfaces/native/node/menu_modifier.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/menu/menu_view.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/nav_bar_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/title_bar_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/tool_bar_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/text/text_pattern.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/button/button_pattern.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/menu/wrapper/menu_wrapper_pattern.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_pattern.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/bar_item_event_hub.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/bar_item_pattern.h",
+        "used_count": 3,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/common/agingadapation/aging_adapation_dialog_util.h",
+        "used_count": 4,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/base/view_abstract.h",
+        "used_count": 4,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/image/image_layout_property.h",
+        "used_count": 4,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navdestination_node_base.h",
+        "used_count": 4,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/navigation/title_bar_pattern.h",
+        "used_count": 10,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navdestination_pattern_base.h",
+        "used_count": 12,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_title_util.h",
+        "used_count": 32,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ]
+  },
+  "foundation/arkui/ace_engine/frameworks/core/components_ng/pattern/navigation/navigation_model_static.cpp": {
+    "processed": true,
+    "0_used_headers": [
+      {
+        "file_name": "base/i18n/localization.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/button/button_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/divider/divider_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/divider/divider_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/image/image_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/bar_item_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/nav_bar_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_content_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/title_bar_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/tool_bar_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navrouter/navdestination_group_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navrouter/navdestination_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navrouter/navrouter_group_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/text/text_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "frameworks/bridge/common/utils/engine_helper.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_model_static.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/button/button_pattern.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/divider/divider_render_property.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/tool_bar_pattern.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navdestination_content_pattern.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/bar_item_pattern.h",
+        "used_count": 3,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/image/image_layout_property.h",
+        "used_count": 4,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/nav_bar_pattern.h",
+        "used_count": 4,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_title_util.h",
+        "used_count": 5,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/title_bar_pattern.h",
+        "used_count": 5,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_toolbar_util.h",
+        "used_count": 6,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_pattern.h",
+        "used_count": 12,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/base/frame_node.h",
+        "used_count": 69,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ]
+  },
+  "foundation/arkui/ace_engine/frameworks/core/components_ng/pattern/tabs/tab_bar_layout_algorithm.cpp": {
+    "processed": true,
+    "0_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/tabs/tab_bar_layout_algorithm.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/geometry/axis.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/geometry/dimension.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/geometry/ng/offset_t.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/geometry/ng/size_t.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components/common/layout/grid_system_manager.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/image/image_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/linear_layout/linear_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tab_bar_paint_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tabs_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tabs_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/text/text_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/property/measure_utils.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/property/position_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/pipeline_ng/pipeline_context.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "base/utils/utils.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/base/frame_node.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/property/measure_property.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "base/log/ace_trace.h",
+        "used_count": 3,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components/common/layout/grid_layout_info.h",
+        "used_count": 8,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components/tab_bar/tab_theme.h",
+        "used_count": 8,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "core/components_ng/property/layout_constraint.h",
+        "used_count": 14,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tab_bar_pattern.h",
+        "used_count": 17,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/layout/layout_algorithm.h",
+        "used_count": 32,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ]
+  },
+  "foundation/arkui/ace_engine/frameworks/compatible/components/stepper/render_stepper.h": {
+    "processed": true,
+    "0_used_headers": [
+      {
+        "file_name": "base/memory/ace_type.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "compatible/components/stepper/stepper_component.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/animation/animation.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/animation/animator.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/animation/keyframe_animation.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components/box/box_component.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components/box/render_box.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components/flex/flex_component.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components/flex/render_flex.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components/image/image_component.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components/progress/render_loading_progress.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components/text/text_component.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/gestures/click_recognizer.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/gestures/raw_recognizer.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "compatible/components/stepper/stepper_animation_controller.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components/display/render_display.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components/text/render_text.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/pipeline/base/render_node.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components/image/render_image.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": []
+  },
+  "foundation/arkui/ace_engine/frameworks/core/components_ng/pattern/indexer/arc_indexer_layout_algorithm.cpp": {
+    "processed": true,
+    "0_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/indexer/arc_indexer_layout_algorithm.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/geometry/dimension.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/geometry/ng/size_t.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/utils/utils.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components/common/layout/layout_param.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/base/frame_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/base/view_stack_processor.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/layout/layout_wrapper.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/indexer/arc_indexer_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/text/text_model.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/text/text_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/property/measure_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/property/measure_utils.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/pipeline/base/constants.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "core/components_ng/property/layout_constraint.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": []
+  },
+  "foundation/arkui/ace_engine/frameworks/core/components_ng/pattern/tabs/tabs_model_ng.cpp": {
+    "processed": true,
+    "0_used_headers": [
+      {
+        "file_name": "base/memory/ace_type.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/memory/referenced.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/animation/animation_pub.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/base/group_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/divider/divider_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/divider/divider_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/image/image_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/stack/stack_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper/swiper_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper/swiper_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tabs_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/text/text_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/property/measure_utils.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/common/resource/resource_parse_utils.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/divider/divider_render_property.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tabs_controller.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/linear_layout/linear_layout_pattern.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components/common/properties/decoration.h",
+        "used_count": 4,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tab_bar_paint_property.h",
+        "used_count": 4,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tabs_model_ng.h",
+        "used_count": 5,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "base/log/ace_trace.h",
+        "used_count": 5,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper/swiper_paint_property.h",
+        "used_count": 5,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components/swiper/swiper_controller.h",
+        "used_count": 6,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tab_bar_pattern.h",
+        "used_count": 8,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "core/components/common/layout/constants.h",
+        "used_count": 11,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/base/view_stack_processor.h",
+        "used_count": 42,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tabs_pattern.h",
+        "used_count": 100,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "base/utils/utils.h",
+        "used_count": 134,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ]
+  },
+  "foundation/arkui/ace_engine/frameworks/core/components_ng/pattern/side_bar/side_bar_container_pattern.cpp": {
+    "processed": true,
+    "0_used_headers": [
+      {
+        "file_name": "base/memory/ace_type.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/common/ace_application_info.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/common/agingadapation/aging_adapation_dialog_theme.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/common/container.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/common/recorder/event_recorder.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components/common/properties/shadow_config.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/button/button_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/button/button_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/divider/divider_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/divider/divider_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/image/image_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/text/text_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/text/text_pattern.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "accessibility_element_info.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/image/image_layout_property.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/side_bar/side_bar_container_paint_method.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/window_scene/helper/window_scene_helper.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/common/agingadapation/aging_adapation_dialog_util.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/divider/divider_render_property.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "base/utils/multi_thread.h",
+        "used_count": 4,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "base/log/ace_trace.h",
+        "used_count": 5,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "base/resource/internal_resource.h",
+        "used_count": 6,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "base/mousestyle/mouse_style.h",
+        "used_count": 7,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "base/log/log_wrapper.h",
+        "used_count": 8,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/side_bar/side_bar_theme.h",
+        "used_count": 10,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "base/utils/utils.h",
+        "used_count": 44,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components/common/layout/constants.h",
+        "used_count": 47,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/base/frame_node.h",
+        "used_count": 47,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/pattern/side_bar/side_bar_container_pattern.h",
+        "used_count": 70,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ]
+  },
+  "foundation/arkui/ace_engine/frameworks/core/components_ng/pattern/swiper_indicator/indicator_common/swiper_indicator_pattern.h": {
+    "processed": true,
+    "0_used_headers": [
+      {
+        "file_name": "base/memory/ace_type.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/utils/utils.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper/swiper_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper_indicator/circle_dot_indicator/circle_dot_indicator_layout_algorithm.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper_indicator/circle_dot_indicator/circle_dot_indicator_paint_method.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper_indicator/digit_indicator/digit_indicator_layout_algorithm.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper_indicator/dot_indicator/overlength_dot_indicator_paint_method.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper_indicator/dot_indicator/dot_indicator_layout_algorithm.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper_indicator/dot_indicator/dot_indicator_paint_method.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper_indicator/indicator_common/swiper_indicator_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper_indicator/indicator_common/swiper_indicator_utils.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/text/text_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/text/text_pattern.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/swiper_indicator/indicator_common/swiper_indicator_accessibility_property.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/pattern.h",
+        "used_count": 4,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "core/components_ng/base/frame_node.h",
+        "used_count": 10,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ]
+  },
+  "foundation/arkui/ace_engine/frameworks/core/components_ng/pattern/navigation/title_bar_layout_algorithm.cpp": {
+    "processed": true,
+    "0_used_headers": [
+      {
+        "file_name": "base/utils/utf_helper.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/title_bar_layout_algorithm.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/app_bar/app_bar_theme.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/nav_bar_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/nav_bar_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/title_bar_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/title_bar_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navrouter/navdestination_group_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navrouter/navdestination_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/text/text_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/property/measure_utils.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/navrouter/navdestination_pattern.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/property/layout_constraint.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/property/measure_property.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "base/utils/measure_util.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/image/image_layout_property.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navdestination_node_base.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_title_util.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/title_bar_pattern.h",
+        "used_count": 7,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/base/frame_node.h",
+        "used_count": 9,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/navigation/navdestination_pattern_base.h",
+        "used_count": 18,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_declaration.h",
+        "used_count": 40,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ]
+  },
+  "foundation/arkui/ace_engine/frameworks/core/components_ng/pattern/tabs/tabs_model_static.cpp": {
+    "processed": true,
+    "0_used_headers": [
+      {
+        "file_name": "base/memory/ace_type.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/memory/referenced.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/animation/animation_pub.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/base/group_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/divider/divider_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/divider/divider_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/image/image_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper/swiper_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper/swiper_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tabs_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/text/text_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/property/measure_utils.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "base/log/ace_trace.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/divider/divider_render_property.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/linear_layout/linear_layout_pattern.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tab_bar_paint_property.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tabs_model_static.h",
+        "used_count": 3,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components/common/properties/decoration.h",
+        "used_count": 3,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper/swiper_paint_property.h",
+        "used_count": 3,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tabs_controller.h",
+        "used_count": 3,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tabs_model_ng.h",
+        "used_count": 3,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components/swiper/swiper_controller.h",
+        "used_count": 4,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tab_bar_pattern.h",
+        "used_count": 5,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "core/components/common/layout/constants.h",
+        "used_count": 11,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/base/view_stack_processor.h",
+        "used_count": 17,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tabs_pattern.h",
+        "used_count": 47,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "base/utils/utils.h",
+        "used_count": 85,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ]
+  },
+  "foundation/arkui/ace_engine/frameworks/core/components_ng/pattern/tabs/tab_bar_pattern.cpp": {
+    "processed": true,
+    "0_used_headers": [
+      {
+        "file_name": "base/geometry/axis.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/geometry/dimension.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/geometry/ng/offset_t.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/geometry/ng/size_t.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/log/dump_log.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/memory/ace_type.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/base/inspector_filter.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/manager/load_complete/load_complete_manager.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/scroll/scroll_spring_effect.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tabs_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tab_content_model_ng.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/tabs/tabs_controller.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tabs_node.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/text/text_layout_property.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper/swiper_event_hub.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "base/perfmonitor/perf_monitor.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/pattern.h",
+        "used_count": 3,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "base/perfmonitor/perf_constants.h",
+        "used_count": 3,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "base/utils/multi_thread.h",
+        "used_count": 4,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/image/image_layout_property.h",
+        "used_count": 4,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper/swiper_model.h",
+        "used_count": 4,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/common/agingadapation/aging_adapation_dialog_util.h",
+        "used_count": 5,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "core/components/tab_bar/tab_theme.h",
+        "used_count": 22,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tabs_pattern.h",
+        "used_count": 26,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components/common/layout/constants.h",
+        "used_count": 40,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "base/utils/utils.h",
+        "used_count": 60,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/pattern/scrollable/scrollable.h",
+        "used_count": 64,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/base/frame_node.h",
+        "used_count": 70,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tab_bar_pattern.h",
+        "used_count": 189,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ]
+  },
+  "foundation/arkui/ace_engine/frameworks/core/components_ng/pattern/tabs/tab_content_model_ng.cpp": {
+    "processed": true,
+    "0_used_headers": [
+      {
+        "file_name": "base/memory/ace_type.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/memory/referenced.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/image/image_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/linear_layout/linear_layout_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper/swiper_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tab_content_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tab_content_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tabs_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/text/text_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/symbol/symbol_effect_options.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_v2/inspector/inspector_constants.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/tabs/tab_bar_item_pattern.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/symbol/constants.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tab_content_model_ng.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/image/image_layout_property.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tab_content_event_hub.h",
+        "used_count": 4,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/common/resource/resource_parse_utils.h",
+        "used_count": 9,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/tabs/tab_bar_pattern.h",
+        "used_count": 13,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components/tab_bar/tab_theme.h",
+        "used_count": 14,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/base/view_stack_processor.h",
+        "used_count": 14,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "base/utils/utils.h",
+        "used_count": 38,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/base/frame_node.h",
+        "used_count": 38,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ]
+  },
+  "foundation/arkui/ace_engine/frameworks/bridge/declarative_frontend/jsview/js_navigation.cpp": {
+    "processed": true,
+    "0_used_headers": [
+      {
+        "file_name": "base/memory/referenced.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/system_bar/system_bar_style.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/engine/functions/js_event_function.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/jsview/js_utils.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/base/view_abstract_model.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/base/view_stack_model.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/base/view_stack_processor.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_model_data.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_model_ng.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/title_bar_pattern.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "bridge/declarative_frontend/engine/js_converter.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/jsview/models/navigation_model_impl.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/engine/functions/js_click_function.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/jsview/js_view_abstract.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/engine/functions/js_navigation_function.h",
+        "used_count": 4,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/jsview/js_navigation_stack.h",
+        "used_count": 6,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_options.h",
+        "used_count": 6,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/jsview/js_nav_path_stack.h",
+        "used_count": 8,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/jsview/js_navigation_utils.h",
+        "used_count": 8,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "base/log/ace_scoring_log.h",
+        "used_count": 11,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_declaration.h",
+        "used_count": 12,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/engine/js_ref_ptr.h",
+        "used_count": 86,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "frameworks/bridge/declarative_frontend/jsview/js_navigation.h",
+        "used_count": 108,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/engine/js_types.h",
+        "used_count": 118,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ]
+  },
+  "foundation/arkui/ace_engine/frameworks/bridge/declarative_frontend/jsview/js_tab_content.cpp": {
+    "processed": true,
+    "0_used_headers": [
+      {
+        "file_name": "bridge/declarative_frontend/jsview/js_utils.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/jsview/js_view_common_def.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/common/resource/resource_object.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/base/view_stack_model.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/image/image_model.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tab_content_model_ng.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tabs_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tabs_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/property/measure_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/common/dynamic_module_helper.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "bridge/declarative_frontend/jsview/js_view_abstract.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "base/log/ace_scoring_log.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "base/log/ace_trace.h",
+        "used_count": 4,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "core/components/tab_bar/tab_theme.h",
+        "used_count": 11,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "base/image/image_defines.h",
+        "used_count": 15,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "frameworks/bridge/declarative_frontend/jsview/js_tab_content.h",
+        "used_count": 54,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ]
+  },
+  "foundation/arkui/ace_engine/frameworks/compatible/components/swiper/render_swiper.h": {
+    "0_used_headers": [
+      {
+        "file_name": "base/memory/ace_type.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/utils/macros.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/animation/animation.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/animation/animator.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/animation/spring_motion.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/common/vibrator/vibrator_proxy.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components/box/render_box.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components/text/text_component.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/gestures/click_recognizer.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/gestures/raw_recognizer.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "core/animation/scroll_motion.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components/common/properties/swiper_indicator.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components/flex/flex_component.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components/flex/render_flex.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components/common/rotation/rotation_node.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components/text/render_text.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "compatible/components/swiper/swiper_component.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/pipeline/base/render_node.h",
+        "used_count": 3,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/animation/keyframe_animation.h",
+        "used_count": 4,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/gestures/drag_recognizer.h",
+        "used_count": 4,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components/common/rotation/rotation_controller.h",
+        "used_count": 8,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [],
+    "processed": true
+  },
+  "foundation/arkui/ace_engine/frameworks/core/components_ng/pattern/navrouter/navdestination_pattern.h": {
+    "0_used_headers": [
+      {
+        "file_name": "base/memory/referenced.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/system_bar/system_bar_style.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/utils/utils.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_event_hub.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navrouter/navdestination_group_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navrouter/navdestination_layout_algorithm.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navrouter/navdestination_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/syntax/shallow_builder.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_v2/inspector/inspector_constants.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "core/common/autofill/auto_fill_trigger_state_holder.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navdestination_pattern_base.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_stack.h",
+        "used_count": 3,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navrouter/navdestination_event_hub.h",
+        "used_count": 4,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/base/ui_node.h",
+        "used_count": 5,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navrouter/navdestination_scrollable_processor.h",
+        "used_count": 8,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/navrouter/navdestination_context.h",
+        "used_count": 12,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ],
+    "processed": true
+  },
+  "foundation/arkui/ace_engine/frameworks/bridge/declarative_frontend/jsview/js_nav_path_stack.cpp": {
+    "0_used_headers": [
+      {
+        "file_name": "base/log/ace_scoring_log.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/memory/ace_type.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/utils/utils.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "bridge/common/utils/engine_helper.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/engine/functions/js_function.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_group_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/pipeline_ng/pipeline_context.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "interfaces/napi/kits/utils/napi_utils.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "bridge/declarative_frontend/jsview/js_utils.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/engine/js_converter.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "bridge/declarative_frontend/jsview/js_nav_path_stack.h",
+        "used_count": 35,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/engine/js_ref_ptr.h",
+        "used_count": 38,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/engine/js_types.h",
+        "used_count": 47,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ],
+    "processed": true
+  },
+  "foundation/arkui/ace_engine/frameworks/bridge/declarative_frontend/jsview/js_swiper.cpp": {
+    "0_used_headers": [
+      {
+        "file_name": "base/log/event_report.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "bridge/common/utils/utils.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/ark_theme/theme_apply/js_theme_utils.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/engine/functions/js_event_function.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/animation/curve.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components/common/properties/scroll_bar.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/base/view_stack_processor.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper/swiper_model_ng.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/common/dynamic_module_helper.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "bridge/declarative_frontend/engine/js_converter.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/jsview/js_utils.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "bridge/js_frontend/engine/jsi/js_value.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/engine/functions/js_click_function.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper/swiper_content_transition_proxy.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/jsview/js_indicator.h",
+        "used_count": 5,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/scrollable/scrollable_properties.h",
+        "used_count": 6,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components/swiper/swiper_indicator_theme.h",
+        "used_count": 7,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components/common/layout/constants.h",
+        "used_count": 8,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "base/utils/utils.h",
+        "used_count": 9,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/engine/functions/js_swiper_function.h",
+        "used_count": 9,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "bridge/common/utils/engine_helper.h",
+        "used_count": 11,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/jsview/js_view_abstract.h",
+        "used_count": 13,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/view_stack_processor.h",
+        "used_count": 13,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "base/log/ace_scoring_log.h",
+        "used_count": 15,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/engine/jsi/js_ui_index.h",
+        "used_count": 17,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper/swiper_model.h",
+        "used_count": 27,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/ark_theme/theme_apply/js_swiper_theme.h",
+        "used_count": 154,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "frameworks/bridge/declarative_frontend/jsview/js_swiper.h",
+        "used_count": 189,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ],
+    "processed": true
+  },
+  "foundation/arkui/ace_engine/frameworks/bridge/declarative_frontend/ng/page_router_manager.cpp": {
+    "0_used_headers": [
+      {
+        "file_name": "interfaces/inner_api/ui_session/ui_session_manager.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/i18n/localization.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/ressched/ressched_report.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/perfmonitor/perf_monitor.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/common/recorder/node_data_cache.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/manager/load_complete/load_complete_manager.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/stage/page_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_v2/inspector/inspector_constants.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/pipeline_ng/pipeline_context.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "core/components/dialog/dialog_theme.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "bridge/js_frontend/engine/jsi/ark_js_runtime.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/stage/page_node.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "interfaces/inner_api/ace/ui_content_config.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/base/view_advanced_register.h",
+        "used_count": 3,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "bridge/common/utils/engine_helper.h",
+        "used_count": 4,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "frameworks/bridge/declarative_frontend/engine/jsi/jsi_declarative_engine.h",
+        "used_count": 9,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "core/components_ng/manager/content_change_manager/content_change_manager.h",
+        "used_count": 27,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/pattern/stage/stage_manager.h",
+        "used_count": 27,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/pipeline/base/element_register.h",
+        "used_count": 27,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/common/thread_checker.h",
+        "used_count": 29,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/base/frame_node.h",
+        "used_count": 64,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "frameworks/bridge/declarative_frontend/ng/page_router_manager.h",
+        "used_count": 118,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ],
+    "processed": true
+  },
+  "foundation/arkui/ace_engine/frameworks/core/components/indexer/indexer_theme.h": {
+    "0_used_headers": [
+      {
+        "file_name": "base/geometry/dimension.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/memory/ace_type.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/memory/referenced.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/common/container.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components/common/properties/color.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components/common/properties/decoration.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components/theme/theme.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components/theme/theme_attributes.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components/theme/theme_constants.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "core/components/theme/theme_style.h",
+        "used_count": 4,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "core/components/common/properties/text_style.h",
+        "used_count": 8,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ],
+    "processed": true
+  },
+  "foundation/arkui/ace_engine/frameworks/core/components_ng/pattern/indexer/arc_indexer_content_modifier.cpp": {
+    "0_used_headers": [
+      {
+        "file_name": "base/geometry/arc.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/geometry/ng/offset_t.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/utils/utils.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/animation/curves.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components/common/properties/color.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/render/drawing_prop_convertor.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/render/path_painter.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/pipeline/pipeline_base.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/indexer/indexer_theme.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "core/components/indexer/indexer_theme.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "core/components_ng/base/modifier.h",
+        "used_count": 3,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/render/drawing.h",
+        "used_count": 5,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/pattern/indexer/arc_indexer_content_modifier.h",
+        "used_count": 7,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ],
+    "processed": true
+  },
+  "foundation/arkui/ace_engine/frameworks/core/components_ng/pattern/navigation/title_bar_pattern.cpp": {
+    "0_used_headers": [
+      {
+        "file_name": "base/i18n/localization.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/nav_bar_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_group_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_layout_util.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/title_bar_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/title_bar_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/text/text_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/text/text_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_v2/inspector/utils.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "core/common/agingadapation/aging_adapation_dialog_theme.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components/button/button_theme.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/button/button_pattern.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "base/utils/multi_thread.h",
+        "used_count": 5,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/common/agingadapation/aging_adapation_dialog_util.h",
+        "used_count": 5,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_title_util.h",
+        "used_count": 9,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_declaration.h",
+        "used_count": 39,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/title_bar_pattern.h",
+        "used_count": 63,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ],
+    "processed": true
+  },
+  "foundation/arkui/ace_engine/frameworks/core/interfaces/native/implementation/swiper_modifier.cpp": {
+    "0_used_headers": [
+      {
+        "file_name": "core/components/common/properties/color.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper/swiper_model_static.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/interfaces/native/utility/ace_engine_types.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/interfaces/native/utility/converter.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/interfaces/native/utility/validators.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/interfaces/native/implementation/dot_indicator_peer_impl.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/interfaces/native/implementation/digit_indicator_peer_impl.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/interfaces/native/implementation/indicator_component_controller_peer.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper/swiper_change_event.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "core/interfaces/native/utility/peer_utils.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/interfaces/native/implementation/swiper_content_transition_proxy_peer.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/interfaces/native/implementation/swiper_controller_modifier_peer_impl.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "base/utils/string_utils.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "core/interfaces/native/utility/callback_helper.h",
+        "used_count": 11,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/interfaces/native/utility/reverse_converter.h",
+        "used_count": 19,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ],
+    "processed": true
+  },
+  "foundation/arkui/ace_engine/advanced_ui_component/navpushpathhelper/src/hsp_silentinstall.cpp": {
+    "0_used_headers": [
+      {
+        "file_name": "system_ability_definition.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "ability_runtime/context/context.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "adapter/ohos/entrance/ace_container.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/pipeline_ng/pipeline_context.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/log/log.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/utils/utils.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/manager/navigation/navigation_manager.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/image/image_pattern.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "iservice_registry.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "want.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "advanced_ui_component/navpushpathhelper/include/silent_install_callback.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "advanced_ui_component/navpushpathhelper/include/hsp_silentinstall.h",
+        "used_count": 4,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ],
+    "processed": true
+  },
+  "foundation/arkui/ace_engine/frameworks/bridge/declarative_frontend/jsview/js_navdestination.cpp": {
+    "processed": true,
+    "0_used_headers": [
+      {
+        "file_name": "base/memory/ace_type.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/system_bar/system_bar_style.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/jsview/js_navigation.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/jsview/js_utils.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/base/view_stack_model.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/base/view_stack_processor.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/manager/navigation/navigation_manager.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navrouter/navdestination_model_ng.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "bridge/declarative_frontend/engine/js_converter.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "base/utils/utils.h",
+        "used_count": 4,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/jsview/js_navdestination_context.h",
+        "used_count": 6,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_options.h",
+        "used_count": 6,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/jsview/js_navdestination_scrollable_processor.h",
+        "used_count": 7,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/jsview/js_navigation_utils.h",
+        "used_count": 8,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "base/log/ace_scoring_log.h",
+        "used_count": 13,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/engine/js_execution_scope_defines.h",
+        "used_count": 14,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/engine/functions/js_function.h",
+        "used_count": 15,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/engine/js_ref_ptr.h",
+        "used_count": 62,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/engine/js_types.h",
+        "used_count": 96,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "frameworks/bridge/declarative_frontend/jsview/js_navdestination.h",
+        "used_count": 109,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ]
+  },
+  "foundation/arkui/ace_engine/frameworks/bridge/declarative_frontend/jsview/js_tabs.cpp": {
+    "processed": true,
+    "0_used_headers": [
+      {
+        "file_name": "interfaces/inner_api/ui_session/ui_session_manager.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/engine/functions/js_event_function.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/jsview/js_view_common_def.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/animation/curve.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/base/view_stack_model.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/base/view_stack_processor.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tabs_model_ng.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/common/dynamic_module_helper.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "bridge/declarative_frontend/jsview/js_scrollable.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/jsview/js_tabs_controller.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/engine/functions/js_swiper_function.h",
+        "used_count": 3,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tab_content_transition_proxy.h",
+        "used_count": 3,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "compatible/components/tab_bar/modifier/tab_modifier_api.h",
+        "used_count": 5,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components/common/layout/constants.h",
+        "used_count": 6,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/engine/functions/js_tabs_function.h",
+        "used_count": 7,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components/common/properties/decoration.h",
+        "used_count": 7,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "base/log/ace_scoring_log.h",
+        "used_count": 11,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "frameworks/bridge/declarative_frontend/jsview/js_tabs.h",
+        "used_count": 125,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ]
+  },
+  "foundation/arkui/ace_engine/frameworks/core/components/navigation_bar/navigation_bar_component.cpp": {
+    "processed": true,
+    "0_used_headers": [
+      {
+        "file_name": "core/common/dynamic_module_helper.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components/display/display_component.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components/padding/padding_component.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components/transform/transform_component.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components/box/box_component.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components/button/button_theme.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components/image/image_component.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components/text/text_component.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "core/components/navigation_bar/navigation_bar_element.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components/flex/flex_item_component.h",
+        "used_count": 6,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components/flex/flex_item_component.h",
+        "used_count": 6,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "compatible/components/tab_bar/modifier/tab_modifier_api.h",
+        "used_count": 18,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components/navigation_bar/navigation_bar_component.h",
+        "used_count": 38,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ]
+  },
+  "foundation/arkui/ace_engine/frameworks/core/components_ng/pattern/navigation/nav_bar_pattern.cpp": {
+    "processed": true,
+    "0_used_headers": [
+      {
+        "file_name": "base/i18n/localization.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/subwindow/subwindow_manager.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/utils/system_properties.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/image/image_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/menu/menu_view.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/tool_bar_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/interfaces/native/node/menu_modifier.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/menu/wrapper/menu_wrapper_pattern.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_toolbar_util.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/image/image_layout_property.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/bar_item_pattern.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "base/utils/multi_thread.h",
+        "used_count": 4,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/title_bar_pattern.h",
+        "used_count": 6,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_title_util.h",
+        "used_count": 10,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/nav_bar_pattern.h",
+        "used_count": 19,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/pattern/menu/bridge/inner_modifier/menu_view_inner_modifier.h",
+        "used_count": 68,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/pattern/menu/bridge/inner_modifier/menu_inner_modifier.h",
+        "used_count": 77,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ]
+  },
+  "foundation/arkui/ace_engine/frameworks/core/components_ng/pattern/navigation/nav_bar_pattern.h": {
+    "processed": true,
+    "0_used_headers": [
+      {
+        "file_name": "base/memory/referenced.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/nav_bar_layout_algorithm.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/nav_bar_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/nav_bar_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_event_hub.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_layout_algorithm.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/title_bar_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/pattern.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/navigation/navdestination_pattern_base.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/navigation/nav_bar_event_hub.h",
+        "used_count": 3,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/base/ui_node.h",
+        "used_count": 5,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ]
+  },
+  "foundation/arkui/ace_engine/frameworks/core/components_ng/pattern/navrouter/navdestination_model_static.cpp": {
+    "processed": true,
+    "0_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/navrouter/navdestination_model_static.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/i18n/localization.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/base/view_abstract_model_static.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/title_bar_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/tool_bar_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navrouter/navdestination_group_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/text/text_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "frameworks/base/system_bar/system_bar_style.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/button/button_pattern.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navdestination_content_pattern.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/tool_bar_pattern.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/image/image_layout_property.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/image/image_render_property.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_title_util.h",
+        "used_count": 5,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/title_bar_pattern.h",
+        "used_count": 5,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_toolbar_util.h",
+        "used_count": 6,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navrouter/navdestination_pattern.h",
+        "used_count": 9,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "core/components_ng/base/frame_node.h",
+        "used_count": 63,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ]
+  },
+  "foundation/arkui/ace_engine/frameworks/core/components_ng/pattern/stage/page_pattern.cpp": {
+    "processed": true,
+    "0_used_headers": [
+      {
+        "file_name": "base/log/jank_frame_report.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/perfmonitor/perf_monitor.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/base/observer_handler.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/manager/load_complete/load_complete_manager.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/container_modal/container_modal_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "bridge/common/utils/engine_helper.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/ng/entry_page_info.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "interfaces/inner_api/ui_session/ui_session_manager.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "base/perfmonitor/perf_constants.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/stage/page_pattern.h",
+        "used_count": 9,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "core/components_ng/manager/content_change_manager/content_change_manager.h",
+        "used_count": 22,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ]
+  },
+  "foundation/arkui/ace_engine/frameworks/core/components_ng/pattern/stepper/stepper_pattern.cpp": {
+    "processed": true,
+    "0_used_headers": [
+      {
+        "file_name": "base/i18n/localization.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/image/image_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/loading_progress/loading_progress_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/stepper/stepper_constants.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/stepper/stepper_item_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/stepper/stepper_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper/swiper_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/text/text_pattern.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/linear_layout/linear_layout_pattern.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/button/button_pattern.h",
+        "used_count": 3,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/button/button_event_hub.h",
+        "used_count": 4,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/stepper/stepper_pattern.h",
+        "used_count": 24,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ]
+  },
+  "foundation/arkui/ace_engine/frameworks/core/components_ng/pattern/swiper/swiper_model_ng.cpp": {
+    "processed": true,
+    "0_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/swiper/swiper_model_ng.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/error/error_code.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/geometry/axis.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/memory/referenced.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/common/resource/resource_parse_utils.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper/swiper_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper_indicator/indicator_common/swiper_indicator_utils.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper/swiper_change_event.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/swiper/arc_swiper_pattern.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper/swiper_pattern.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper_indicator/indicator_common/indicator_controller.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "core/components_ng/base/view_stack_processor.h",
+        "used_count": 113,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "base/utils/utils.h",
+        "used_count": 114,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/base/frame_node.h",
+        "used_count": 114,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ]
+  },
+  "foundation/arkui/ace_engine/frameworks/bridge/declarative_frontend/jsview/js_navigation_stack.cpp": {
+    "processed": true,
+    "0_used_headers": [
+      {
+        "file_name": "bridge/common/utils/engine_helper.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/engine/functions/js_function.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/event/event_hub.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/custom/custom_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navrouter/navdestination_model.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_v2/inspector/inspector_constants.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "frameworks/base/json/json_util.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "bridge/declarative_frontend/engine/js_converter.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/jsview/js_nav_path_stack.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/base/ui_node.h",
+        "used_count": 3,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/base/view_stack_processor.h",
+        "used_count": 4,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "bridge/declarative_frontend/jsview/js_navdestination_context.h",
+        "used_count": 11,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/common/force_split/force_split_utils.h",
+        "used_count": 13,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/engine/js_execution_scope_defines.h",
+        "used_count": 63,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/jsview/js_navigation_stack.h",
+        "used_count": 101,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ]
+  },
+  "foundation/arkui/ace_engine/frameworks/bridge/declarative_frontend/jsview/js_navrouter.cpp": {
+    "processed": true,
+    "0_used_headers": [
+      {
+        "file_name": "base/memory/ace_type.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/utils/utils.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/base/view_stack_processor.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_group_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navrouter/navrouter_model_ng.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navrouter/navrouter_pattern.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "base/log/ace_scoring_log.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "bridge/declarative_frontend/jsview/js_navigation_stack.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "frameworks/bridge/declarative_frontend/jsview/js_navrouter.h",
+        "used_count": 17,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ]
+  },
+  "foundation/arkui/ace_engine/frameworks/compatible/components/toolbaritem/dom_tool_bar_item.h": {
+    "processed": true,
+    "0_used_headers": [
+      {
+        "file_name": "core/components/button/button_component.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components/flex/flex_component.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components/image/image_component.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components/option/option_component.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components/text/text_component.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components/theme/theme_manager.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "frameworks/bridge/common/dom/dom_node.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "compatible/components/toolbaritem/tool_bar_item_component.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components/tool_bar/tool_bar_theme.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": []
+  },
+  "foundation/arkui/ace_engine/frameworks/core/common/force_split/force_split_utils.cpp": {
+    "processed": true,
+    "0_used_headers": [
+      {
+        "file_name": "base/geometry/dimension.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/json/json_util.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/common/container.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/image/image_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/nav_bar_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navrouter/navdestination_group_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/stack/stack_pattern.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/linear_layout/linear_layout_pattern.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navrouter/navdestination_pattern.h",
+        "used_count": 3,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/pipeline/base/element_register.h",
+        "used_count": 7,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "core/common/force_split/force_split_utils.h",
+        "used_count": 22,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "ui/base/utils/utils.h",
+        "used_count": 29,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ]
+  },
+  "foundation/arkui/ace_engine/frameworks/core/components_ng/pattern/navigation/navdestination_node_base.cpp": {
+    "processed": true,
+    "0_used_headers": [
+      {
+        "file_name": "base/utils/utf_helper.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/json/json_util.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/image/image_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/bar_item_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/nav_bar_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/tool_bar_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/text/text_layout_property.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/navigation/navdestination_content_pattern.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/title_bar_pattern.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/tool_bar_pattern.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/navigation/navdestination_node_base.h",
+        "used_count": 19,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ]
+  },
+  "foundation/arkui/ace_engine/frameworks/core/components_ng/pattern/navigation/navdestination_pattern_base.h": {
+    "processed": true,
+    "0_used_headers": [
+      {
+        "file_name": "base/memory/ace_type.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/memory/referenced.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/manager/focus/focus_view.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/nav_bar_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/nav_bar_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navdestination_layout_property_base.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/tool_bar_node.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/pattern.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_options.h",
+        "used_count": 5,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/pipeline/base/element_register.h",
+        "used_count": 6,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_declaration.h",
+        "used_count": 12,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ]
+  },
+  "foundation/arkui/ace_engine/frameworks/core/components_ng/pattern/navigation/navigation_group_node.h": {
+    "processed": true,
+    "0_used_headers": [
+      {
+        "file_name": "base/memory/referenced.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/base/group_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/bar_item_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/title_bar_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navrouter/navdestination_group_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navrouter/navrouter_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/property/property.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "core/animation/page_transition_common.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_stack.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_declaration.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "core/components_ng/base/frame_node.h",
+        "used_count": 67,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ]
+  },
+  "foundation/arkui/ace_engine/frameworks/core/components_ng/pattern/navrouter/navdestination_model_ng.cpp": {
+    "processed": true,
+    "0_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/navrouter/navdestination_model_ng.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/i18n/localization.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/title_bar_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/tool_bar_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navrouter/navdestination_group_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/text/text_pattern.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "frameworks/base/system_bar/system_bar_style.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/button/button_pattern.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navdestination_content_pattern.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/tool_bar_pattern.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/image/image_layout_property.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/image/image_render_property.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_title_util.h",
+        "used_count": 10,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/navigation_toolbar_util.h",
+        "used_count": 11,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navrouter/navdestination_pattern.h",
+        "used_count": 23,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      },
+      {
+        "file_name": "core/components_ng/pattern/navigation/title_bar_pattern.h",
+        "used_count": 27,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ]
+  },
+  "foundation/arkui/ace_engine/frameworks/core/components_ng/pattern/swiper_indicator/circle_dot_indicator/circle_dot_indicator_paint_method.cpp": {
+    "processed": true,
+    "0_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/swiper_indicator/circle_dot_indicator/circle_dot_indicator_paint_method.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components/common/layout/constants.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components/common/properties/color.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper/swiper_layout_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper_indicator/indicator_common/swiper_indicator_utils.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/render/paint_property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/pipeline/pipeline_base.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [],
+    "many_times_used_headers": []
+  },
+  "foundation/arkui/ace_engine/frameworks/core/components_ng/pattern/swiper_indicator/dot_indicator/dot_indicator_layout_algorithm.cpp": {
+    "processed": true,
+    "0_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/swiper_indicator/dot_indicator/dot_indicator_layout_algorithm.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/geometry/axis.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/geometry/ng/offset_t.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/geometry/ng/size_t.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/utils/utils.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/base/frame_node.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper/swiper_pattern.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [
+      {
+        "file_name": "core/components_ng/pattern/swiper_indicator/dot_indicator/dot_indicator_paint_property.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper_indicator/indicator_common/swiper_indicator_utils.h",
+        "used_count": 1,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      },
+      {
+        "file_name": "core/components_ng/pattern/swiper_indicator/indicator_common/swiper_indicator_pattern.h",
+        "used_count": 2,
+        "optimized": "优先尝试前向声明；如存在内联实现或模板/constexpr依赖，则将实际调用移动到cpp"
+      }
+    ],
+    "many_times_used_headers": []
+  },
+  "foundation/arkui/ace_engine/frameworks/core/components_ng/pattern/tabs/tab_bar_modifier.h": {
+    "processed": true,
+    "0_used_headers": [
+      {
+        "file_name": "base/memory/ace_type.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "base/geometry/axis.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components/common/properties/color.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/pattern/tabs/tab_content_model.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/property/property.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/render/animation_utils.h",
+        "optimized": "直接删除"
+      },
+      {
+        "file_name": "core/components_ng/render/drawing.h",
+        "optimized": "直接删除"
+      }
+    ],
+    "little_used_headers": [],
+    "many_times_used_headers": [
+      {
+        "file_name": "core/components_ng/base/modifier.h",
+        "used_count": 4,
+        "optimized": "不建议直接删除；优先考虑缩小包含范围、拆分更轻量头文件或减少传递包含"
+      }
+    ]
+  }
+}
