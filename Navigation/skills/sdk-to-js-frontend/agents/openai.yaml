@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDK-to-JS-Frontend"
+  short_description: "Generate ArkUI JS frontend bindings from SDK"
+  default_prompt: "Use $sdk-to-js-frontend to add ArkUI declarative JS frontend bindings from SDK declarations."
